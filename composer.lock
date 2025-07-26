@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a6313d216401d342efaf64dffdf3a023",
+    "packages": [
+        {
+            "name": "featurevisor/featurevisor-php",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/featurevisor/featurevisor-php.git",
+                "reference": "26b2f80c599aee07f147c207a78c73d9631ce78b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/featurevisor/featurevisor-php/zipball/26b2f80c599aee07f147c207a78c73d9631ce78b",
+                "reference": "26b2f80c599aee07f147c207a78c73d9631ce78b",
+                "shasum": ""
+            },
+            "require-dev": {
+                "php": "^8.0",
+                "phpunit/phpunit": "^10"
+            },
+            "bin": [
+                "featurevisor"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/index.php"
+                ],
+                "psr-4": {
+                    "Featurevisor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fahad Heylaal",
+                    "homepage": "https://fahad19.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Featurevisor SDK for PHP",
+            "homepage": "https://featurevisor.com",
+            "keywords": [
+                "feature-flag",
+                "feature-flags",
+                "feature-management",
+                "feature-toggles",
+                "featurevisor"
+            ],
+            "support": {
+                "docs": "https://featurevisor.com/docs/sdks/php/",
+                "issues": "https://github.com/featurevisor/featurevisor-php/issues",
+                "source": "https://github.com/featurevisor/featurevisor-php"
+            },
+            "time": "2025-07-26T23:33:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

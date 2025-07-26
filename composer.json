@@ -1,0 +1,9 @@
+{
+  "name": "featurevisor/featurevisor-example-php",
+  "description": "Example PHP app using Featurevisor SDK",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "featurevisor/featurevisor-php": "^0.0.3"
+  }
+}

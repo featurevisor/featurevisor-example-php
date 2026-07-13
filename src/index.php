@@ -2,14 +2,14 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function Featurevisor\createInstance;
+use Featurevisor\Featurevisor;
 
 // fetch datafile
 $DATAFILE_URL = "https://featurevisor-example-cloudflare.pages.dev/production/featurevisor-tag-all.json";
 $datafileContent = json_decode(file_get_contents($DATAFILE_URL), true);
 
 // create instance
-$f = createInstance([
+$f = Featurevisor::createFeaturevisor([
     "datafile" => $datafileContent,
 ]);
 

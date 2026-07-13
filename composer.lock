@@ -4,34 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6313d216401d342efaf64dffdf3a023",
+    "content-hash": "e37b949b5b8e926fd7e5b1b3ede4e665",
     "packages": [
         {
             "name": "featurevisor/featurevisor-php",
-            "version": "v0.0.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/featurevisor/featurevisor-php.git",
-                "reference": "26b2f80c599aee07f147c207a78c73d9631ce78b"
+                "reference": "15366f65c108e634277d45cef9710952b17a8a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/featurevisor/featurevisor-php/zipball/26b2f80c599aee07f147c207a78c73d9631ce78b",
-                "reference": "26b2f80c599aee07f147c207a78c73d9631ce78b",
+                "url": "https://api.github.com/repos/featurevisor/featurevisor-php/zipball/15366f65c108e634277d45cef9710952b17a8a63",
+                "reference": "15366f65c108e634277d45cef9710952b17a8a63",
                 "shasum": ""
             },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0",
+                "psr/log": "^1.1",
+                "symfony/polyfill-php80": "^1.33"
+            },
             "require-dev": {
-                "php": "^8.0",
-                "phpunit/phpunit": "^10"
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9"
             },
             "bin": [
                 "featurevisor"
             ],
             "type": "library",
             "autoload": {
-                "files": [
-                    "src/index.php"
-                ],
                 "psr-4": {
                     "Featurevisor\\": "src/"
                 }
@@ -61,7 +64,141 @@
                 "issues": "https://github.com/featurevisor/featurevisor-php/issues",
                 "source": "https://github.com/featurevisor/featurevisor-php"
             },
-            "time": "2025-07-26T23:33:38+00:00"
+            "time": "2026-07-13T21:48:56+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.37.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
+                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.37.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-04-10T16:19:22+00:00"
         }
     ],
     "packages-dev": [],

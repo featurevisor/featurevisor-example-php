@@ -4,6 +4,6 @@
   "type": "project",
   "license": "MIT",
   "require": {
-    "featurevisor/featurevisor-php": "^2.0"
+    "featurevisor/featurevisor-php": "^3.0"
   }
 }

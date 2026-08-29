@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b40ada326ff79a1d8fd2329f61a3cd5",
+    "content-hash": "75894dbcaa0704ac1816370c9a5afc5c",
     "packages": [
         {
             "name": "featurevisor/featurevisor-php",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/featurevisor/featurevisor-php.git",
-                "reference": "bfd61c573892e5f7cdbaedf97757846392be4454"
+                "reference": "d36b58a9920f8053b82ee9cdfe8d2bb6bd3ec46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/featurevisor/featurevisor-php/zipball/bfd61c573892e5f7cdbaedf97757846392be4454",
-                "reference": "bfd61c573892e5f7cdbaedf97757846392be4454",
+                "url": "https://api.github.com/repos/featurevisor/featurevisor-php/zipball/d36b58a9920f8053b82ee9cdfe8d2bb6bd3ec46c",
+                "reference": "d36b58a9920f8053b82ee9cdfe8d2bb6bd3ec46c",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
                 "issues": "https://github.com/featurevisor/featurevisor-php/issues",
                 "source": "https://github.com/featurevisor/featurevisor-php"
             },
-            "time": "2026-07-23T22:41:41+00:00"
+            "time": "2026-08-29T15:22:03+00:00"
         }
     ],
     "packages-dev": [],

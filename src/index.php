@@ -26,9 +26,9 @@ if (!preg_match('/\s2\d\d\s/', $statusLine)) {
     throw new RuntimeException("Datafile request failed: {$statusLine}");
 }
 
-$datafile = json_decode($datafileJson, true, 512, JSON_THROW_ON_ERROR);
+// Raw JSON keeps `{}` and `[]` distinct, which decoding into PHP arrays cannot.
 $f = Featurevisor::createFeaturevisor([
-    'datafile' => $datafile,
+    'datafile' => $datafileJson,
     'logLevel' => 'error',
     'context' => [
         'userId' => 'customer-123',
